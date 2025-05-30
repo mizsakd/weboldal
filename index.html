@@ -9,9 +9,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Mizsák Dávid - Személyes Weboldal</title>
     <style>
+        body { /* túl kicsi volt az oldal 😊 */
+            transform: scaleY(1.08);
+            transform-origin: top left;
+        }
 
         .kep {
-            height: 300px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
             background: #aaa;
             display: flex;
 
@@ -19,12 +26,26 @@
             justify-content: center;
             color: white;
             font-weight: bold;
+            overflow: hidden !important;
         }
+        .kep2 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            background: #aaa;
+            display: flex;
 
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            overflow: hidden !important;
+        }
         .jumbotron {
             padding: 2rem;
             margin-bottom: 0;
-            border-top: 1px solid #ccc;
+            border-radius: 0px !important;
         }
 
         .bg-gradient-blue {
@@ -56,10 +77,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Család</a>
+                        <a class="nav-link" href="csalad.html">Család</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Hobbi</a>
+                        <a class="nav-link" href="galeria.html">Galéria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="elerhetoseg">Elérhetőségek</a>
                     </li>
                 </ul>
             </div>
@@ -85,12 +109,24 @@
                     <div class="card-body">
                         <h2 class="card-title text-primary">Bemutatkozás</h2>
                         <h5 class="card-subtitle mb-2 text-muted">Foglalkozás: Tanuló a Széchenyiben</h5>
+                        <img class="kep2" src="Képernyőkép 2025-05-30 201747.png" alt="">
                         <p class="card-text">Jelenleg a Nyíregyházi Szakképzési Centrum Széchenyi István Technikum és Kollégium duális képzési felelős igazgatóhelyettesként dolgozom Nyíregyházán. Mellette 9. évfolyamon tanítok Programozási alapok című tárgyat.</p>
                     </div>
                 </div>
-
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">Legutóbbi esemény</h2>
+                        <h5 class="card-subtitle mb-2 text-muted">Osztálykirándulás </h5>
+                        <p class="card-text">Néhány nappal ezelőtt egy nagyon kellemes helyen töltöttünk időt.</p>
+                        <p class="card-text">Ez a hotel volt a szállásunk helyszíne:</p> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2644.4747686994283!2d21.3521653!3d48.4857874!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473f300c1b0922ed%3A0xe8e94e94136ab9fb!2zQXJhbnliw6FueWEgUGFuemnDsw!5e0!3m2!1shu!2shu!4v1748630666808!5m2!1shu!2shu" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="card-text">Ellátogattunk egy mézmúzeumba, megtekintettünk egy várat, valamint megnéztük a Vizsolyi Bibliát is.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <footer class="bg-primary text-white text-center py-3">
+        Készítette Mizsák Dávid
+    </footer>
 </body>
 </html>
